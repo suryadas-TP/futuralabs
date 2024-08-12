@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-page {
+    background-color: rgb(66, 19, 123);
+    height: 680;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid; */
+    padding-top: 35;
+
+}
+
+
+.img {
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid; */
+    padding-right: 120px;
+    padding-top: 25px;
+}
+
+ul {
+
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: white;
+    align-items: center;
+    gap: 70px;
+}
+
+p {
+    color: white;
+}
+
+.contact {
+    height: 40;
+    width: 140;
+    border-radius: 30px;
+    border: 1px solid;
+    background-color: orange;
+    /* padding-right: 40px; */
+}
+
+button:hover {
+    background-color: rgb(94, 29, 184);
+}
+
+.head2 {
+    font-size: 50px;
+    color: rgb(255, 190, 59);
+    /* border: 1px solid; */
+
+
+}
+
+.middle {
+    padding-left: 100;
+    flex: 1;
+}
+
+.boy-girl {
+    flex: 1;
+}
+
+.button2 {
+    /* border: 1px solid; */
+    gap: 20px;
+    display: flex;
+    width: fit-content;
+
+
+}
+
+.b2 {
+    border-radius: 10px;
+    background-color: rgb(66, 19, 123);
+    border-color: white;
+    color: white;
+    width: 150;
+    height: 45;
+}
+
+.b3 {
+    border-radius: 10px;
+    width: 90;
+    height: 45;
+    background-color: rgb(66, 19, 123);
+    border-color: white;
+    color: white;
+}
+
+.b2:hover {
+    background-color: white;
+    color: darkviolet;
+}
+
+.b3:hover {
+    background-color: white;
+    color: darkviolet;
+}
+
+.bg {
+    display: flex;
+
+    height: fit-content;
+}
+
+.boy-girl>img:nth-child(1) {
+    width: 700px;
+    /* padding-bottom: 50; */
+
+
+}
+
+/* .boy-girl>img{
+
+}
+.boy-girl>img:nth-child(1) :hover{
+   
+} */
+
+/* .boy-girl> div{
+
+
+    height: 0;
+} */
+
+
+.boy-girl>div>img {
+    position: relative;
+    bottom: 150px;
+    right: 100px;
+    height: 100px;
+}
+
+.placement {
+    /* animation cheyyan */
+    animation-name: img-rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes img-rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+
+
+
+
+.two {
+    padding-top: 100px;
+}
+
+.two>h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.two>h1 {
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+}
+
+.two>h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.button3 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.a {
+    border: 1px solid;
+    height: 40px;
+    width: 140;
+    border-radius: 10px;
+    background-color: rgb(141, 7, 141);
+}
+
+.ab {
+    border: 1px solid;
+    width: 140;
+    border-radius: 10px;
+}
+
+.abc {
+    border: 1px solid;
+    width: 200;
+    border-radius: 10px;
+}
+
+.coding {
+    background-color: darkorchid;
+    cursor: pointer;
+}
+
+.design {
+    background-color: white;
+    cursor: pointer;
+}
+
+.dm {
+    background-color: white;
+    cursor: pointer;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.boxes>div {
+
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgb(11, 11, 11);
+    border-radius: 24px;
+    padding: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.boxes>div:hover {
+    border-color: orange;
+}
+
+.boxes img {
+    width: 200px;
+    height: 80px;
+    object-fit: contain;
+
+}
+
+.boxes h3 {
+    color: rgb(153, 28, 215);
+}
+
+.bb {
+    display: flex;
+    justify-content: center;
+    /* border: none; */
+
+}
+
+.view {
+    height: 45px;
+    width: 200px;
+    border-radius: 10px;
+   
+    border: 1px solid;
+border-color: blueviolet;
+
+}
+
+
+
+
+
+
+
+.third-page {
+    background-color: rgb(238, 232, 241);
+    /* padding-top: 40px; */
+    margin: 5;
+}
+
+.parag {
+    flex: 1;
+}
+
+.parag h1 {
+    color: rgb(147, 34, 196);
+}
+
+.parag p {
+    color: black;
+
+}
+
+.parag button {
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    border-color: blueviolet;
+}
+
+.girl {
+    /* border: 1px solid; */
+    height: fit-content;
+    flex: 1;
+    /* padding-left: 350; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.girl img {
+    /* flex: 1; */
+    width: 400px;
+}
+
+.p-img-box {
+    display: flex;
+    gap: 40px;
+    /* flex-wrap: wrap; */
+    padding: 50px;
+}
+
+.third-boxes {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    gap: 25px;
+    
+    flex: 1;
+
+}
+
+.tb {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    /* border: 1px solid; */
+    border-radius: 10px;
+   
+    padding-top: 20px;
+    padding-left: 20px;
+   
+}
+.tb1{
+    /* border: 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tb h1 {
+    color: rgb(145, 76, 206);
+}
+
+
+
+
+
+
+.fourth-page {
+    padding: 40px;
+    background-color: whitesmoke;
+    height: 750;
+}
+.f-p h1{
+    color: blueviolet;
+}
+
+.f-p h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.f-p h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.f-p p {
+    display: flex;
+    justify-content: center;
+    color: black
+}
+
+.fourth-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    /* background-color: white; */
+    
+}
+.fourth-boxes h2{
+color: blueviolet;
+}
+
+.fourth-boxes p{
+    color: black;
+}
+
+.fb1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    width: 430px;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    padding: 15px;
+    background-color: white;
+    
+}
+.trs{
+    border-radius: 20px;
+   
+}
+.fb2{
+    height: 350px;
+    width: 430px;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    padding: 15px;
+    background-color: white;
+}
+.fb3{
+    height: 350px;
+    width: 430px;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    padding: 15px;
+    background-color: white;
+}
+
+
+.more{
+    /* border: 1px solid; */
+
+    display: flex;
+    justify-content: center;
+}
+
+.more>button{
+    border-radius: 15px;
+    width: 150;
+    height: 45;
+    background-color: white;
+}
+.more>button:hover{
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+.fifth-page{
+    background-color: rgb(74, 9, 135);
+    padding: 60px;
+    background-image: url('https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/bg02.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.journey h3{
+    color: white;
+
+}
+.journey h1{
+    color: white;
+}
+.journey p{
+    font-size: 20px;
+}
+.jm{
+display: flex;
+justify-content: space-between;
+}
+.maala{
+    
+    border: 1px solid;
+   
+}
+.maala h1{
+    color: white;
+}
+.maala h3{
+    color: white;
+}
