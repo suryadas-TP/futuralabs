@@ -4,9 +4,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-theme-purple-color: rgb(66, 19, 123);
+}
+
 .first-page {
-    background-color: rgb(66, 19, 123);
+    background-color: var(--bg-theme-purple-color);
     height: 680;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
 }
 
 .head {
@@ -14,7 +25,9 @@
     justify-content: space-around;
     align-items: center;
     /* border: 1px solid; */
-    padding-top: 35;
+    padding: 25px 0;
+
+    background-color: var(--bg-theme-purple-color);
 
 }
 
@@ -50,7 +63,7 @@ p {
     /* padding-right: 40px; */
 }
 
-button:hover {
+.contact:hover {
     background-color: rgb(94, 29, 184);
 }
 
@@ -116,6 +129,8 @@ button:hover {
 
 .boy-girl>img:nth-child(1) {
     width: 700px;
+    position: relative;
+    right: 100px;
     /* padding-bottom: 50; */
 
 
@@ -135,11 +150,26 @@ button:hover {
 } */
 
 
+/* placement div */
 .boy-girl>div>img {
     position: relative;
     bottom: 150px;
-    right: 100px;
+    right: 400px;
     height: 100px;
+
+}
+
+
+.arrow1{
+    position: relative;
+    bottom: 100px;
+}
+.arrow2{
+    position: relative;
+    left: 500px;
+    bottom: 500px;
+    border: 1px solid;
+    
 }
 
 .placement {
@@ -148,6 +178,8 @@ button:hover {
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    /* position: relative;
+    right: 500px; */
 
 }
 
@@ -167,6 +199,7 @@ button:hover {
 
 .two {
     padding-top: 100px;
+   
 }
 
 .two>h3 {
@@ -267,16 +300,18 @@ button:hover {
     display: flex;
     justify-content: center;
     /* border: none; */
-
+background-image: url(./images/bg-arrow.svg);
+background-repeat: no-repeat;
+background-position: right;
 }
 
 .view {
     height: 45px;
     width: 200px;
     border-radius: 10px;
-   
+
     border: 1px solid;
-border-color: blueviolet;
+    border-color: blueviolet;
 
 }
 
@@ -340,7 +375,7 @@ border-color: blueviolet;
     align-items: center;
 
     gap: 25px;
-    
+
     flex: 1;
 
 }
@@ -351,12 +386,13 @@ border-color: blueviolet;
     background-color: white;
     /* border: 1px solid; */
     border-radius: 10px;
-   
+
     padding-top: 20px;
     padding-left: 20px;
-   
+
 }
-.tb1{
+
+.tb1 {
     /* border: 1px solid; */
     display: flex;
     flex-wrap: wrap;
@@ -373,11 +409,15 @@ border-color: blueviolet;
 
 
 .fourth-page {
+    background-image: url(./images/bga2.svg);
+    background-repeat: no-repeat;
+    background-size: 175px;
     padding: 40px;
     background-color: whitesmoke;
     height: 750;
 }
-.f-p h1{
+
+.f-p h1 {
     color: blueviolet;
 }
 
@@ -402,17 +442,18 @@ border-color: blueviolet;
     justify-content: center;
     gap: 25px;
     /* background-color: white; */
-    
-}
-.fourth-boxes h2{
-color: blueviolet;
+
 }
 
-.fourth-boxes p{
+.fourth-boxes h2 {
+    color: blueviolet;
+}
+
+.fourth-boxes p {
     color: black;
 }
 
-.fb1{
+.fb1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -422,13 +463,15 @@ color: blueviolet;
     border-radius: 15px;
     padding: 15px;
     background-color: white;
-    
+
 }
-.trs{
+
+.trs {
     border-radius: 20px;
-   
+
 }
-.fb2{
+
+.fb2 {
     height: 350px;
     width: 430px;
     /* border: 1px solid; */
@@ -436,7 +479,8 @@ color: blueviolet;
     padding: 15px;
     background-color: white;
 }
-.fb3{
+
+.fb3 {
     height: 350px;
     width: 430px;
     /* border: 1px solid; */
@@ -446,20 +490,21 @@ color: blueviolet;
 }
 
 
-.more{
+.more {
     /* border: 1px solid; */
 
     display: flex;
     justify-content: center;
 }
 
-.more>button{
+.more button {
     border-radius: 15px;
     width: 150;
     height: 45;
     background-color: white;
 }
-.more>button:hover{
+
+.more button:hover {
     background-color: blueviolet;
 }
 
@@ -468,36 +513,555 @@ color: blueviolet;
 
 
 
-.fifth-page{
+.fifth-page {
     background-color: rgb(74, 9, 135);
     padding: 60px;
-    background-image: url('https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/bg02.svg');
+    /* background-image: url('https://thefuturalabs.com/wp-content/themes/Netstager_Creative_Suite-3.0/images/bg02.svg'); */
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+background-image: url(./images/bg02.svg);
 }
-.journey h3{
+
+.jm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.journey {
+    padding-right: 250px;
+    position: sticky;
+    top: 50px;
+
+
+    /* border: 1px solid; */
+
+    height: fit-content;
+
+}
+
+.journey h3 {
     color: white;
 
 }
-.journey h1{
+
+.journey h1 {
     color: white;
 }
-.journey p{
+
+.journey p {
     font-size: 20px;
 }
-.jm{
-display: flex;
-justify-content: space-between;
+
+
+
+.maala {
+
+    /* border: 1px solid; */
+    padding-right: 200px;
+
 }
-.maala{
-    
+
+.maala h1 {
+    color: white;
+}
+
+.maala h3 {
+    color: white;
+}
+
+.maala-2 {
+    padding-left: 160px;
+}
+
+.maala-4 {
+    padding-left: 160px;
+}
+
+.maala-img {
+    padding-left: 90px;
+}
+
+
+
+/* sixth page*/
+
+.opp {
+    padding: 150px;
+}
+
+.opp h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.opp h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(90, 17, 158);
+}
+
+.opp p {
+    color: rgb(120, 113, 113);
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.companies img {
+    width: 220px;
+}
+
+.first-row {
+    display: flex;
+    justify-content: center;
+}
+
+.second-row {
+    display: flex;
+    justify-content: center;
+}
+
+.third-row {
+    display: flex;
+    justify-content: center;
+}
+
+.km {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+
+.kmb {
+    color: rgb(87, 16, 153);
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
     border: 1px solid;
-   
+    border-color: rgb(98, 23, 168);
 }
-.maala h1{
+
+.kmb:hover {
+    color: white;
+    background-color: rgb(100, 44, 153);
+}
+
+
+
+
+
+/* seventh-page */
+.seventh-page {
+    background-color: rgb(78, 18, 134);
+}
+
+.seven-head {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    /* padding-bottom: 100PX; */
+    gap: -100px;
+    /* align-items: center; */
+}
+
+.seven-head h3 {
     color: white;
 }
-.maala h3{
+
+.seven-head h1 {
     color: white;
 }
+
+.seven-head p {
+    font-size: larger;
+    padding-top: 40px;
+}
+
+.alumni {
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    /* height: fit-content; */
+    /* border: 1px solid; */
+
+}
+
+.alumnies {
+    /* border: 1px solid; */
+    background-image: url(./images/chali.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding-left: 50px; */
+    /* width: 250px; */
+    /* height: 300px; */
+}
+
+.s-box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sb {
+    width: 280px;
+    height: 100px;
+    /* gap: 20px; */
+    background-color: white;
+    border-radius: 30px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    padding: 10px;
+}
+
+.s-bttn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60PX;
+}
+
+.s-bttn button {
+    width: 120;
+    height: 45;
+    border-radius: 15px;
+    background-color: rgb(81, 1, 156);
+    border: 1px solid;
+    border-color: white;
+    color: white;
+    font-size: 17;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+
+}
+
+.s-bttn button:hover {
+    background-color: white;
+    color: rgb(92, 16, 163);
+
+}
+
+.e-page {
+    padding-left: 100px;
+    padding-top: 120px;
+    padding-right: 50px;
+    /* border: 1px solid; */
+
+
+}
+
+.e-img {
+    /* border: 1px solid; */
+    background-image: url(./images/bg04.svg);
+
+    background-size: 1300px;
+    background-repeat: no-repeat;
+    background-color: rgb(85, 27, 139);
+    height: 220px;
+    width: 1300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.e-img button {
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.e-img-text {
+    padding-top: 25px;
+    padding-left: 50px;
+    color: white;
+}
+
+.coat-boy {
+
+    /* border: 1px solid; */
+}
+
+.coat-boy img {
+    /* border: 1px solid; */
+    position: relative;
+    bottom: 80px;
+    right: 14px;
+    height: 300px;
+}
+
+.e-greybox {
+    padding-left: 100px;
+
+
+
+}
+
+.e-page-two {
+    padding-top: 60px;
+
+    background-color: rgb(232, 230, 245);
+    width: 1300px;
+    height: 900px;
+    border-radius: 18px;
+    padding-left: 70px;
+    padding-right: 80px;
+}
+
+.e-txt-img {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: large;
+}
+
+.e-txt-img h1 {
+    color: rgb(99, 40, 155);
+}
+
+.e-txt-img h4 {
+    color: rgb(66, 65, 65);
+}
+
+.five-sb {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 50px;
+
+}
+
+.five-sbp {
+
+    height: 320px;
+    width: 650px;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.five-sb p {
+    color: black;
+    font-size: larger;
+}
+
+.eighth-page-bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e-page-two button {
+    width: 120px;
+    height: 45px;
+    font-size: large;
+    border-radius: 15px;
+}
+
+.ninenth-page {
+    height: 550px;
+    background-color: rgb(71, 21, 117);
+}
+
+.nine {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    gap: 30px;
+}
+
+.lap-girl {
+    height: fit-content;
+    /* border: 1px solid; */
+    position: relative;
+    bottom: 20px;
+}
+
+.lap-girl-words {
+    color: white;
+    font-size: large;
+    font-style: unset;
+}
+
+.login-form {
+    display: flex;
+    gap: 25px;
+}
+
+::placeholder {
+    color: white;
+}
+
+input {
+    background-color: rgb(90, 38, 139);
+    color: white;
+    height: 40px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-style: none;
+    padding: 10px;
+
+}
+
+textarea {
+    background-color: rgb(90, 38, 139);
+    padding: 10px;
+    height: 120px;
+    width: 400px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+
+
+
+
+.tenth-head {
+    padding-top: 100px;
+}
+
+    
+
+
+.tenth-head h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.gg-words {
+    padding-left: 100px;
+    font-size: larger;
+}
+
+.gg-words summary {
+    color: rgb(82, 41, 121);
+    list-style: none;
+}
+
+.gg-words summary::after {
+    content: '+';
+
+}
+
+.gg-words p {
+    color: black;
+}
+
+/* .gg-words h3::after{
+    content: '+';
+    font-size: 24px;
+    margin-right: 100px;
+    font-weight: 600;
+} */
+.tenth-head h1 {
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+}
+
+.glass-girl {
+    display: flex;
+    padding-bottom: 50px;
+
+}
+
+.eleventh-page {
+    background-image: url(./images/footer-bg.svg);
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    padding: 80px;
+}
+
+.eleven {
+    display: flex;
+    gap: 100px;
+}
+
+.eleven h3 {
+    padding-left: 30px;
+    color: white;
+}
+
+.eleven h4 {
+    color: white;
+    
+}
+
+.rcm {
+    width: 28px;
+}
+
+
+
+
+.twelve {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    /* border: 1px solid; */
+    
+    
+}
+.twelve1{
+    color: white;
+    /* border: 1px solid; */
+
+}
+.twelve1 h2{
+    font-size: 20px;
+}
+.twelve2{
+    color: white;
+    /* border: 1px solid; */
+    padding-top: 25px;
+
+}
+.twelve2 h2{
+    font-size: 20px;
+}
+.twelve3{
+    color: white;
+    /* border: 1px solid; */
+
+}
+.twelve3 h2{
+    font-size: 20px;
+}
+.twelve4{
+    color: white;
+    /* border: 1px solid; */
+    padding-top: 25px;
+
+}
+.twelve4 h2{
+    font-size: 20px;
+}
+.twelve5{
+    color: white;
+    /* border: 1px solid; */
+    padding-top: 25px;
+
+}
+.twelve5 h2{
+    font-size: 20px;
+}
+.twelve6{
+    color: white;
+    /* border: 1px solid; */
+
+}
+.twelve6 h2{
+    font-size: 20px;
+}
+
+
